@@ -1,4 +1,6 @@
 # Coding by fb.com/Rizky.Rasata
+# Python2
+
 import requests,os,re
 
 os.system('clear')
