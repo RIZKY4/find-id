@@ -1,9 +1,7 @@
 # Coding by fb.com/Rizky.Rasata
 # Python2
-
 import requests,os,re
 
-os.system('clear')
 baner = """ _____ _           _   ___ ____    _____ ____
 |  ___(_)_ __   __| | |_ _|  _ \  |  ___| __ )
 | |_  | | '_ \ / _` |  | || | | | | |_  |  _ \
@@ -12,6 +10,7 @@ baner = """ _____ _           _   ___ ____    _____ ____
 |_|   |_|_| |_|\__,_| |___|____/  |_|   |____/\n"""
 
 try:
+ os.system('clear')
  print baner
  u = raw_input('Masukkan username > ')
  url = 'https://www.facebook.com/'+u
