@@ -35,7 +35,7 @@ def user():
 		url = 'https://www.facebook.com/'+u
 		r = requests.get(url).text
 		name = re.search('Title">(.*?)</', r).group(1).strip('| Facebook')
-		user = re.search('<span class="word_break"></span>(.*?)</span>', r).group(1)
+		user = re.search('https://www.facebook.com/(.*?)" />', r).group(1)
 		
 		print '\nNama     > '+name
 		print 'Username > '+user+'\n'
